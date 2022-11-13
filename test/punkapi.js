@@ -39,7 +39,7 @@ describe('Punkapi', () => {
     }
   });
 
-  it('Verify That the amount of data returned', async () => {
+  it('Print all returned “name” of list that endpoint data', async () => {
     const responseData = await getData()
     const data = responseData.body
     for (const item of data) {
